@@ -26,7 +26,7 @@ weatherForm.addEventListener("submit",async event =>{
 
 async function getWeatherData(city) {
     
-    const apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
+    const apiUrl=`Replace API key`;
     const response =await fetch(apiUrl);
 
     if(!response.ok){
@@ -79,5 +79,6 @@ function displayError(message){
     card.textContent="";
     card.style.display="flex";
     card.appendChild(errorDisplay);
+
 
 }
